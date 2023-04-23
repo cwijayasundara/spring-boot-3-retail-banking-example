@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auditor" />
+        <module name="customer-core" />
+        <module name="eureka-server" />
+        <module name="customer-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-banking-sample-springboot-3" target="1.5" />
+      <module name="eureka" target="17" />
+      <module name="spring-boot-3-microservices-sample" target="1.5" />
+      <module name="spring-cloud-stream-kafka-sample" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auditor" options="-parameters" />
+      <module name="customer-core" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+    </option>
+  </component>
+</project>

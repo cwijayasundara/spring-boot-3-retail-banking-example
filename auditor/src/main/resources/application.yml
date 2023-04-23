@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: audtor
+  datasource:
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres_database
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: test-kafka-cluster
+    bootstrap-servers: 127.0.0.1:9095
+test:
+  topic: audit-topic
+
